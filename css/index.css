@@ -1,0 +1,644 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css sakums */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+:root {
+    --bg-color: #f3f4f6;
+    --black: black;
+    --white: white;
+    --gray-500: #9E9E9E;
+    --gray-600: #757575;
+    --gray-800: #424242;
+    --gray-900: #212121;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.width-6 {
+    width: 1.5rem;
+}
+
+.height-6 {
+    height: 1.5rem;
+}
+
+.size-12 {
+    height: 3rem;
+    width: 3rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.errorPrompt {
+    display: flex;
+    background-color: #7a0012;
+    align-content: center;
+    z-index: 1001;
+    position: relative;
+    padding: 0.75rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    /* height: 100%; */
+}
+
+.errorPrompt > p {
+    color: white;
+    margin-left: 0.75rem;
+    font-weight: 600;
+}
+
+.mainContent {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+}
+
+p {
+    color: var(--black);
+}
+
+span {
+    color: var(--black);
+}
+
+h1 {
+    color: var(--black);
+}
+
+div {
+    color: var(--black);
+}
+
+button {
+    color: var(--black);
+}
+
+.sec1 {
+    align-items: center;
+    display: flex;
+}
+
+.sec1dot5 {
+    align-items: center;
+    display: flex;
+}
+
+.sec1dot5 > button {
+    background-color: green;
+}
+
+.searchBar {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-width: 2px;
+    border-radius: .5rem;
+    max-width: 100%;
+    border-style: solid;
+}
+
+.sec2 {
+    align-items: center;
+    display: flex;
+}
+
+.sec1 > h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.sec1 > p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.hamburgerMenu {
+    cursor: pointer;
+    margin-right: .75rem;
+    padding: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(75, 85, 99);
+}
+
+.VTDTtext {
+    cursor: pointer;
+    display: block;
+    color: rgb(59, 130, 246);
+    margin-right: .75rem;
+}
+
+.google-maps {
+    margin-left: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.locationCity {
+    margin-left: .25rem;
+}
+
+.modeChange {
+    cursor: pointer;
+    display: flex;
+    font-feature-settings: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    font-variation-settings: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    transition-duration: .3s;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: rgb(209, 213, 219);
+    border-radius: .5rem;
+    align-items: center;
+    position: relative;
+    border-style: none;
+    margin-right: 0.75rem;
+}
+
+.modeChange > svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.modeChange:hover {
+    background-color: #616161;
+}
+
+.notification {
+    
+    cursor: pointer;
+    padding: .5rem;
+    border-style: none;
+    background-color: transparent
+}
+
+.notification > img {
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.settings {
+    cursor: pointer;
+    padding: .5rem;
+    border-style: none;
+    background-color: transparent
+}
+
+.settings > img {
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.left {
+    padding-inline-end: 2rem;
+    float: left;
+    width: 100%;
+    /* margin-right: 3rem; */
+}
+
+.weatherInfoMain {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.weatherInfo {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.leftSideWeather {
+    min-width: 600px;
+    width: auto;
+}
+
+.currentWeather {
+    position: relative;
+    display: flex;
+    color: #424242;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.localTime {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.weatherIcon {
+    height: 3rem;
+    width: 3rem;
+    max-width: 100%;
+    display: block;
+}
+
+.currentTemp {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+    padding-left: .75rem;
+}
+
+.tempSymbol {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.secondaryInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgb(107, 114, 128);
+    padding-left: 1.5rem;
+}
+
+.text1 {
+    color: rgb(31, 41, 55);
+}
+
+.text2 {
+    color: rgb(17, 24, 39)
+}
+
+.windDirection {
+    margin-top: 1rem;
+    color: rgb(31, 41, 55);
+    line-height: inherit;
+}
+
+.selectorMother {
+    color: rgb(31, 41, 55);
+    position: relative;
+}
+
+.selectorChild > select {
+    width: auto;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(209, 213, 219);
+    border-radius: .5rem;
+    border-width: 1px;
+    max-width: 100%;
+}
+
+section {
+    border-radius: .5rem;
+}
+
+.section1 {
+    width: 100%;
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    float: left;
+    background-color: var(--white);
+    /* padding: 1.5rem; */
+    margin-bottom: 1.5rem;
+}
+
+.containerSection1 {
+    padding: 1.5rem;
+}
+
+.section2 {
+    width: 100%;
+    float: left;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    border-radius: .5rem;
+}
+
+.section2 > div {
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    line-height: inherit;
+}
+
+.iconGrid {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.textSec {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    color: rgb(31, 41, 55);
+    --tw-space-x-reverse: 0;
+    margin-left: calc(.5rem*(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(.5rem*var(--tw-space-x-reverse));
+}
+
+.infoText {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 2rem;
+}
+
+.right {
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    float: right;
+    background-color: var(--white);
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.secondnav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+}
+
+.todayBtn {
+    cursor: pointer;
+    color: rgb(31, 41, 55);
+    padding-bottom: .25rem;
+    border: 0;
+    background-color: transparent;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+}
+
+.tomorrowBtn {
+    cursor: pointer;
+    color: rgb(31, 41, 55);
+    padding-bottom: .25rem;
+    border: 0;
+    background-color: transparent;
+    --tw-space-x-reverse: 0;
+    margin-left: calc(1rem * (1 - var(--tw-space-x-reverse)));
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+}
+
+.tendaysBtn {
+    cursor: pointer;
+    font-weight: 600;
+    padding-bottom: .25rem;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
+    background-color: transparent;
+    --tw-space-x-reverse: 0;
+    margin-left: calc(1rem * (1 - var(--tw-space-x-reverse)));
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+}
+
+
+/* flex justify-between items-center h-16 border-b-2 border-gray-300 pb-2 pt-2 */
+.weatherPrognoze {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-bottom-width: 2px;
+    border-color: rgb(224,224,224);
+    border-style: solid;
+}
+
+.leftSidePrognoze > img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* flex items-center space-x-2 */
+.leftSidePrognoze {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;;
+}
+
+/* flex flex-col items-start overflow-hidden w-full sm:w-40 md:w-48 lg:w-55 */
+.timeWeather {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    
+    --tw-space-x-reverse: 0;
+    margin-left: calc(.5rem*(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(.5rem*var(--tw-space-x-reverse));
+    width: 12rem;
+
+}
+
+.line {
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175/var(--tw-border-opacity));
+    border-left-width: 2px;
+    border-style: solid;
+    height: 3rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    justify-content: center;
+}
+
+/* flex items-center space-x-2 */
+.rightSidePrognoze {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    line-height: inherit;
+}
+
+/* flex items-center */
+.temprightside {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.secondaryRight {
+    display: flex;
+    --tw-space-x-reverse: 0;
+    margin-left: calc(.5rem*(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(.5rem*var(--tw-space-x-reverse));
+    align-items: flex-start;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+/* bg-white text-gray-800 p-6 rounded-lg shadow-md pb-14 */
+.section3 {
+    background-color: var(--white);
+    color: #424242;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    --tw-shadow: 0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .currentTemp {
+        font-size: 2rem;
+    }
+
+    .tempSymbol {
+        font-size: 1rem;
+    }
+
+    .localTime {
+        font-size: 1rem;
+    }
+
+    .text1, .text2 {
+        font-size: 0.875rem;
+    }
+
+    .infoText {
+        font-size: 1.25rem;
+    }
+
+    .timeWeather span {
+        font-size: 0.875rem;
+    }
+}
